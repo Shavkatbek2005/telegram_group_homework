@@ -10,4 +10,10 @@ def find_number_of_messages(data: dict)->int:
         int: Total number of messages.
     
     """
-    return
+    k=0
+    for i in range(1,len(data["messages"])+1):
+        k+=1
+    return k
+print(find_number_of_messages(read_data("data/result.json")))
+
+
